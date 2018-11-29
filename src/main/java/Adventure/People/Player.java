@@ -18,6 +18,10 @@ public abstract class Player {
         return healthMeter;
     }
 
+    public void loseHealth(int value) {
+        this.healthMeter -= value;
+    }
+
     public int checkLoot() {
         return loot;
     }
@@ -29,6 +33,10 @@ public abstract class Player {
     public void checkRoom(Room room) {
 //        enemy? true/false
 //        valuables? true/false
+    }
+
+    public void heal(Cleric cleric) {
+//        deal with healing
     }
 
 }
