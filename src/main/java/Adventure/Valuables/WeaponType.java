@@ -6,13 +6,13 @@ public enum WeaponType implements IValue {
     AXE(25),
     CLUB(9);
 
-    private final int power;
+    private final int powerValue;
 
-    WeaponType(int power) {
-        this.power = power;
+    WeaponType(int powerValue) {
+        this.powerValue = powerValue;
     }
 
-    public int getPower() {
-        return power;
+    public int getValue() {
+        return powerValue;
     }
 }
