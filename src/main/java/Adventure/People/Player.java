@@ -7,15 +7,15 @@ import Adventure.Valuables.TreasureType;
 public abstract class Player {
 
     private int healthMeter;
-    private int treasureChest;
+    private int treasureValue;
 
     public Player() {
         this.healthMeter = 100;
-        this.treasureChest = 0;
+        this.treasureValue = 0;
     }
 
     public void collectTreasure(TreasureType treasure) {
-        this.treasureChest += treasure.value;
+        this.treasureChest += treasure.getValue();
     }
 
     public void checkRoom(Room room) {
