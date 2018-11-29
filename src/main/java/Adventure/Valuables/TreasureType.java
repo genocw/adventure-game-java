@@ -6,7 +6,7 @@ public enum TreasureType implements IValue {
     NECKLACE(80),
     AMULET(150),
     RUBIES(220),
-    COINS(410);
+    COINCHEST(410);
 
     private final int value;
 
